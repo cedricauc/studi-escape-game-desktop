@@ -36,7 +36,6 @@
          <widget class="QLabel" name="dateLabel">
           <property name="font">
            <font>
-            <family>Arial</family>
             <pointsize>12</pointsize>
            </font>
           </property>
@@ -52,7 +51,12 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QComboBox" name="date">
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
           <property name="styleSheet">
            <string notr="true">background-color: #f2f2f2</string>
           </property>
@@ -66,7 +70,6 @@
          <widget class="QLabel" name="paradoxLabel">
           <property name="font">
            <font>
-            <family>Arial</family>
             <pointsize>14</pointsize>
            </font>
           </property>
@@ -85,7 +88,6 @@
          <widget class="QLabel" name="escapeGameLabel">
           <property name="font">
            <font>
-            <family>Arial</family>
             <pointsize>12</pointsize>
            </font>
           </property>
@@ -108,9 +110,11 @@
      <layout class="QHBoxLayout" name="horizontalLayoutBottom">
       <item>
        <widget class="QTabWidget" name="horizontal_tab">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="font">
          <font>
-          <family>Arial</family>
           <pointsize>12</pointsize>
          </font>
         </property>
@@ -165,11 +169,6 @@
            </widget>
           </item>
          </layout>
-        </widget>
-        <widget class="QWidget" name="tab_2">
-         <attribute name="title">
-          <string>Tab 2</string>
-         </attribute>
         </widget>
        </widget>
       </item>
